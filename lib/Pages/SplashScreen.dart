@@ -1,4 +1,5 @@
 // ignore: file_names
+import 'package:delivery_app_flutter/Pages/Categories.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -75,7 +76,14 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   const SizedBox(height: 50), 
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Categories()
+                          ) 
+                        ) ;
+                    },
                     style: ElevatedButton.styleFrom(
                       foregroundColor: const Color.fromARGB(255, 159, 158, 158),
                       backgroundColor: const Color.fromARGB(255, 122, 255, 118),
