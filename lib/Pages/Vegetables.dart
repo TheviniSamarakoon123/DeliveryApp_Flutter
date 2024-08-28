@@ -261,7 +261,7 @@ class _VegetablesState extends State<Vegetables> {
                                           ),
                                           padding: const EdgeInsets.all(8),
                                         ),
-                                        child: const Icon(Icons.favorite, color: Colors.white),
+                                        child: const Icon(Icons.favorite_outline, color: Color.fromARGB(255, 145, 145, 145)),
                                       ),
                                       const SizedBox(width: 10),
                                       ElevatedButton(
@@ -277,7 +277,7 @@ class _VegetablesState extends State<Vegetables> {
                                             borderRadius: BorderRadius.circular(8),
                                           ),
                                         ),
-                                        child: const Icon(Icons.shopping_cart, color: Colors.white),
+                                        child: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
                                       ),
                                     ],
                                   ),
@@ -337,7 +337,7 @@ class _VegetablesState extends State<Vegetables> {
                                           ),
                                           padding: const EdgeInsets.all(8),
                                         ),
-                                        child: const Icon(Icons.favorite, color: Colors.white),
+                                        child: const Icon(Icons.favorite_outline, color: Color.fromARGB(255, 145, 145, 145)),
                                       ),
                                       const SizedBox(width: 10),
                                       ElevatedButton(
@@ -349,7 +349,7 @@ class _VegetablesState extends State<Vegetables> {
                                             borderRadius: BorderRadius.circular(8),
                                           ),
                                         ),
-                                        child: const Icon(Icons.shopping_cart, color: Colors.white),
+                                        child: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
                                       ),
                                     ],
                                   ),
@@ -409,7 +409,7 @@ class _VegetablesState extends State<Vegetables> {
                                           ),
                                           padding: const EdgeInsets.all(8),
                                         ),
-                                        child: const Icon(Icons.favorite, color: Colors.white),
+                                        child: const Icon(Icons.favorite_outline, color: Color.fromARGB(255, 145, 145, 145)),
                                       ),
                                       const SizedBox(width: 10),
                                       ElevatedButton(
@@ -421,7 +421,7 @@ class _VegetablesState extends State<Vegetables> {
                                             borderRadius: BorderRadius.circular(8),
                                           ),
                                         ),
-                                        child: const Icon(Icons.shopping_cart, color: Colors.white),
+                                        child: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
                                       ),
                                     ],
                                   ),
@@ -454,7 +454,7 @@ class _VegetablesState extends State<Vegetables> {
               },
             ),
             IconButton(
-              icon: const Icon(Icons.shopping_cart, color: Color.fromARGB(255, 182, 182, 182)),
+              icon: const Icon(Icons.shopping_cart_outlined, color: Color.fromARGB(255, 182, 182, 182)),
               onPressed: () {},
             ),
             IconButton(
