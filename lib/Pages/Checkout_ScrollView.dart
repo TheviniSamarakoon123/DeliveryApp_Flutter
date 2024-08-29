@@ -39,13 +39,13 @@ class _Checkout_ScrollViewState extends State<Checkout_ScrollView> {
           const Spacer(flex: 2),
           Expanded(
             child: Container(
-              color: const Color.fromARGB(255, 245, 245, 245),
+              color: const Color.fromARGB(255, 255, 255, 255),
             ),
           ),
           SizedBox(
             height: 745,
             child: Container(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 245, 245, 245),
               child: Column(
                 children: [
                   const SizedBox(height: 20),
