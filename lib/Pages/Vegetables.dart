@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:delivery_app_flutter/Pages/Categories.dart';
 import 'package:delivery_app_flutter/Pages/Item.dart';
+import 'package:delivery_app_flutter/Pages/Checkout_ScrollView.dart';
 
 class Vegetables extends StatefulWidget {
   const Vegetables({super.key});
@@ -455,7 +456,12 @@ class _VegetablesState extends State<Vegetables> {
             ),
             IconButton(
               icon: const Icon(Icons.shopping_cart_outlined, color: Color.fromARGB(255, 182, 182, 182)),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Checkout_ScrollView()),
+                );
+              },
             ),
             IconButton(
               icon: const Icon(Icons.man_4_outlined, color: Color.fromARGB(255, 182, 182, 182)),

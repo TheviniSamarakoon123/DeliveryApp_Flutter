@@ -1,4 +1,5 @@
 // ignore: file_names
+import 'package:delivery_app_flutter/Pages/Checkout_ScrollView.dart';
 import 'package:flutter/material.dart';
 import 'package:delivery_app_flutter/Pages/Vegetables.dart';
 // ignore: unused_import
@@ -140,7 +141,12 @@ class _CategoriesState extends State<Categories> {
             ),
             IconButton(
               icon: const Icon(Icons.shopping_cart, color: Color.fromARGB(255, 182, 182, 182)),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Checkout_ScrollView()),
+                );
+              },
             ),
             IconButton(
               icon: const Icon(Icons.man_4_outlined, color: Color.fromARGB(255, 182, 182, 182)),
