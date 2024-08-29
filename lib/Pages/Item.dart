@@ -1,7 +1,6 @@
+import 'package:delivery_app_flutter/Pages/Checkout_ScrollView.dart';
 import 'package:flutter/material.dart';
 // ignore: unused_import
-import 'package:delivery_app_flutter/Pages/Vegetables.dart';
-import 'package:delivery_app_flutter/Pages/Checkout_ScrollView.dart';
 
 class Item extends StatefulWidget {
   const Item({super.key});
