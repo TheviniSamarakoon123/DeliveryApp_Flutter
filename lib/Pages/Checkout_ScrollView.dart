@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:delivery_app_flutter/Pages/Payment.dart';
+
 
 class Checkout_ScrollView extends StatefulWidget {
   const Checkout_ScrollView({super.key});
@@ -49,12 +51,12 @@ class _Checkout_ScrollViewState extends State<Checkout_ScrollView> {
               child: Column(
                 children: [
                   const SizedBox(height: 20),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           'Payment method',
                           style: TextStyle(
                             color: Colors.black,
@@ -62,12 +64,22 @@ class _Checkout_ScrollViewState extends State<Checkout_ScrollView> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
-                          'CHANGE',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 72, 31, 97),
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Payment(),
+                              ),
+                            );
+                          },
+                          child: const Text(
+                            'CHANGE',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 72, 31, 97),
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ],
